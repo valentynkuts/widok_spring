@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Show Students</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>First name</th>
+        <th>Last name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="student:${students}">
+        <td th:text = "${student.firstName}">No student name</td>
+        <td th:text = "${student.lastName}">No student lastname</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
